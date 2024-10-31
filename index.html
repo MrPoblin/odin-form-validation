@@ -4,10 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Validation</title>
-    <script src="script.js" defer></script>
+    <script src="script.js" type="module"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <form novalidate class="form">
+        <div>Email</div>
+        <input class="email" type="email" name="email" required>
+        <div>Country</div>
+        <input class="country" type="text" name="country" required>
+        <div>Zip Code</div>
+        <input class="zip" type="text" name="zip" required>
+        <div>Password</div>
+        <input class="password" type="password" name="password" maxlength="256" required>
+        <div>Confirm Password</div>
+        <input class="confirm" type="password" name="confirm" required>
+        <div></div>
+        <button class="submit">Submit</button>
+    </form>
 </body>
 </html>
